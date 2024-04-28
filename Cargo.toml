@@ -1,0 +1,16 @@
+[package]
+name = "osm-rs"
+description = "Query OpenStreetMap objects"
+repository = "https://github.com/azaouit/osm-rs"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+keywords = ["gis", "maps", "openstreetmaps"]
+
+[dependencies]
+clap = {version="4.5.4", features=["env", "derive"]}
+reqwest = {version = "0.12.2", features = ["json"]}
+serde = {version="1.0.197", features=["derive"]}
+serde-aux = "4.5.0"
+serde_json = "1.0.115"
+tokio = {version = "1.36.0", features = ["rt", "macros", "rt-multi-thread"] }
