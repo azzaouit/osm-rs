@@ -71,7 +71,7 @@
 //!    };
 //!
 //!    let resp = g.search(&c).await.unwrap();
-//!    assert_eq!(resp.osm_id, 5331978048);
+//!    assert_eq!(resp.osm_id, 10533284);
 //! }
 //! ```
 

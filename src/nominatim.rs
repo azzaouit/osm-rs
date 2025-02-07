@@ -46,7 +46,7 @@
 //!    };
 //!
 //!    let resp = g.search(&c).await.unwrap();
-//!    assert_eq!(resp.osm_id, 5331978048);
+//!    assert_eq!(resp.osm_id, 10533284);
 //! }
 //! ```
 use crate::overpass::BoundingBox;
@@ -198,7 +198,7 @@ impl ReverseGeocode {
     ///    };
     ///
     ///    let resp = g.search(&c).await.unwrap();
-    ///    assert_eq!(resp.osm_id, 5331978048);
+    ///    assert_eq!(resp.osm_id, 10533284);
     /// }
     /// ```
     pub async fn search(&self, config: &Config) -> Result<GeocodeResponse, reqwest::Error> {
@@ -248,6 +248,6 @@ mod tests {
         };
 
         let resp = g.search(&c).await.unwrap();
-        assert_eq!(resp.osm_id, 5331978048);
+        assert_eq!(resp.osm_id, 10533284);
     }
 }
